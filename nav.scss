@@ -1,0 +1,15 @@
+.nav-main {
+    display: flex;
+    justify-content: center;
+    &__list {
+        display: flex;
+        list-style: none;
+        &--item {
+            margin-right: 1rem;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
