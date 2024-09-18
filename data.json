@@ -40,28 +40,14 @@
             "id": 6, 
             "title": "Iveco Daily", 
             "price": "910.000 vnđ", 
-            "image":"", 
+            "image":"https://hyundaiviethan.vn/wp-content/uploads/2021/12/xe-cuu-thuong-iveco.jpg", 
             "descriptions": "Primis netus officiis vitae odit voluptatum tempore habitant? Deserunt euismod senectus condimentum leo cubilia bibendum! Praesent quaerat lobortis, taciti morbi voluptates libero voluptatum porta sunt expedita numquam aptent! Leo adipisci aliquet pharetra? Incidunt, lorem tempor sociis minim magnis cursus tortor ornare, mollis velit ipsa nostrum ipsa accusamus! Hac curae, nec, laborum, eveniet felis similique vitae? Potenti consectetuer, porttitor vitae quibusdam. Minim nunc ipsam interdum fugiat, ducimus, rutrum sagittis exercitation nostrum maecenas blandit! Donec! Aliquam nobis potenti aute debitis enim cupidatat corrupti ex recusandae expedita quisque nullam autem irure quae quod arcu aliquam commodo mi rerum, montes. Incididunt commodi quae, amet." 
         },
         {
             "id": 7, 
-            "title": "", 
+            "title": "Gaz Ambulance", 
             "price": "910.000 vnđ", 
-            "image":"", 
-            "descriptions": "Primis netus officiis vitae odit voluptatum tempore habitant? Deserunt euismod senectus condimentum leo cubilia bibendum! Praesent quaerat lobortis, taciti morbi voluptates libero voluptatum porta sunt expedita numquam aptent! Leo adipisci aliquet pharetra? Incidunt, lorem tempor sociis minim magnis cursus tortor ornare, mollis velit ipsa nostrum ipsa accusamus! Hac curae, nec, laborum, eveniet felis similique vitae? Potenti consectetuer, porttitor vitae quibusdam. Minim nunc ipsam interdum fugiat, ducimus, rutrum sagittis exercitation nostrum maecenas blandit! Donec! Aliquam nobis potenti aute debitis enim cupidatat corrupti ex recusandae expedita quisque nullam autem irure quae quod arcu aliquam commodo mi rerum, montes. Incididunt commodi quae, amet." 
-        },
-        {
-            "id": 8, 
-            "title": "", 
-            "price": "910.000 vnđ", 
-            "image":"", 
-            "descriptions": "Primis netus officiis vitae odit voluptatum tempore habitant? Deserunt euismod senectus condimentum leo cubilia bibendum! Praesent quaerat lobortis, taciti morbi voluptates libero voluptatum porta sunt expedita numquam aptent! Leo adipisci aliquet pharetra? Incidunt, lorem tempor sociis minim magnis cursus tortor ornare, mollis velit ipsa nostrum ipsa accusamus! Hac curae, nec, laborum, eveniet felis similique vitae? Potenti consectetuer, porttitor vitae quibusdam. Minim nunc ipsam interdum fugiat, ducimus, rutrum sagittis exercitation nostrum maecenas blandit! Donec! Aliquam nobis potenti aute debitis enim cupidatat corrupti ex recusandae expedita quisque nullam autem irure quae quod arcu aliquam commodo mi rerum, montes. Incididunt commodi quae, amet." 
-        },
-        {
-            "id": 9,
-            "title": "", 
-            "price": "910.000 vnđ", 
-            "image":"", 
+            "image":"https://hyundai-mienbac.com/wp-content/uploads/2021/09/xe-gaz-cuu-thuong-nhap-khau-nga-4-1280x640.jpg", 
             "descriptions": "Primis netus officiis vitae odit voluptatum tempore habitant? Deserunt euismod senectus condimentum leo cubilia bibendum! Praesent quaerat lobortis, taciti morbi voluptates libero voluptatum porta sunt expedita numquam aptent! Leo adipisci aliquet pharetra? Incidunt, lorem tempor sociis minim magnis cursus tortor ornare, mollis velit ipsa nostrum ipsa accusamus! Hac curae, nec, laborum, eveniet felis similique vitae? Potenti consectetuer, porttitor vitae quibusdam. Minim nunc ipsam interdum fugiat, ducimus, rutrum sagittis exercitation nostrum maecenas blandit! Donec! Aliquam nobis potenti aute debitis enim cupidatat corrupti ex recusandae expedita quisque nullam autem irure quae quod arcu aliquam commodo mi rerum, montes. Incididunt commodi quae, amet." 
         }
     ]
