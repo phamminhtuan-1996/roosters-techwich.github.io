@@ -1,0 +1,35 @@
+h2 {
+    font-size: 30px;
+}
+
+.w500 {
+    width: 100%;
+}
+
+.column-3,
+.column-2, .column-2-3 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.row{
+    flex-direction: column;
+}
+.section-wrapper {
+    gap: 50px;
+    .contact-bg {
+        padding: 0 5%;
+    }
+}
+footer .footer-wrapper .footer-col2 h5{
+    display: none;
+}
+
+footer .footer-wrapper .sub-footer{
+    gap: 20px 0;
+    align-items: center;
+    span{
+        display: none;
+    }
+    div{
+        align-items: center;
+    }
+}
