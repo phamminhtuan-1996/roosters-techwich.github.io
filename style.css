@@ -1,20 +1,8 @@
-/* .nav-main {
-  display: flex;
-  justify-content: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.nav-main__list {
-  display: flex;
-  list-style: none;
-}
-.nav-main__list--item {
-  margin-right: 1rem;
-}
-.nav-main__list--item a {
-  text-decoration: none;
-  color: black;
-}
-
-/*# sourceMappingURL=style.css.map */
 /* menu--hao */
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -30,8 +18,6 @@ li{
 }
 a{
   text-decoration: none;
-}
-.logo{
 }
 .title{
   display: flex;
@@ -69,6 +55,8 @@ a{
 
 .header{
   padding: 0 10px;
+  background: rgb(173, 206, 140);
+  border-radius: 4px;
 }
 .container{
   width: 95%;
@@ -91,21 +79,21 @@ a{
   position: relative;
 
 }
-.menu .container .header .logo img{
+.menu .header .logo img{
   width: 150px;
   height: 90px;
 }
-.menu .container .title ul li a{
+.menu  .title ul li a{
   color: black;
   font-weight: 700;
 }
-.menu .container .title ul li a span{
+.menu .title ul li a span{
   margin-right:10px ;
 }
-.menu .container .title ul li a:hover{
+.menu .title ul li a:hover{
   color: aqua;
 }
-.menu .container .header .title ul.menu-throw{
+.menu .header .title ul.menu-throw{
   position: absolute;
   background: rgb(235, 231, 231);
   padding: 15px 0px;
@@ -115,42 +103,40 @@ a{
   width: 150px;
   display: none;
 }
-.menu .container .title li:hover>ul.menu-throw{
+.menu .title li:hover>ul.menu-throw{
   display: block;
 }
-.menu .container .title ul.menu-throw a{
+.menu .title ul.menu-throw a{
   padding: 8px 15px;
-  border-bottom: 1px solid rgb(170, 118, 118);
   font-size: 11px;
 
 }
-.menu .container .title ul .menu-throw li{
+.menu .title ul .menu-throw li{
 }
-.menu .container .title ul .menu-throw li:hover a{
-  border-bottom: 1px solid black;
+.menu .title ul .menu-throw li:hover a{
 }
-.menu .container .title ul .menu-throw li:last-child a{
+.menu .title ul .menu-throw li:last-child a{
   border-bottom: none;
 }
-.menu .container .title>ul>li>a{
+.menu .title>ul>li>a{
   position: relative;
 }
-.menu .container .title>ul>li>a::before{
+.menu .title>ul>li>a::before{
   content: " ";
   height: 4px;
   width: 0px;
   background: red;
   position: absolute;
-  bottom: 0px;
+  bottom: -10px;
   left: 0px;
 }
-.menu .container .title>ul>li:hover>a::before{
+.menu .title>ul>li:hover>a::before{
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   width: 100%;
+  
 }
-.menu .container .title>ul>li>a::after{
-  content: "/f107";
-  font-family: "Font Awesome 4.7.0 Free";
+.menu .title>ul>li>a::after{
+  content: "";
   color: rgb(192, 192, 50);
   position: absolute;
   top: 0px;
