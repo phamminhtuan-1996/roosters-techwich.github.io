@@ -1,0 +1,17 @@
+.details-car__header {
+  display: flex;
+}
+.details-car__header--img {
+  width: 500px;
+}
+.details-car__header--img img {
+  width: 100%;
+}
+.details-car .details__item {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=details-car.css.map */

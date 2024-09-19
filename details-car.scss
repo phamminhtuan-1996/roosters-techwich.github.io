@@ -1,0 +1,20 @@
+.details-car {
+    &__header {
+        display: flex;
+        &--img {
+            width: 500px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .details {
+        &__item {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
