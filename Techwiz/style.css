@@ -11,19 +11,24 @@
     --text-blue: #3368C6;
     --text-dark-blue: #031B4E;
 }
-body{
+
+body {
     background-color: var(--bg-lightblue);
 }
+
 .box {
     height: max-content;
 }
+
 h2 {
     font-size: 48px;
     font-weight: normal;
 }
+
 h3 {
     font-size: 12px;
 }
+
 h4 {
     font-size: 26px;
     font-weight: 500;
@@ -33,6 +38,7 @@ h5 {
     font-size: 32px;
     font-weight: 500;
 }
+
 a {
     text-decoration: none;
     color: var(--text-dark-blue);
@@ -47,10 +53,6 @@ a {
 ul {
     list-style-type: none;
 }
-
-
-
-
 
 p {
     font-size: 16px;
@@ -106,6 +108,105 @@ textarea {
 .highlight {
     color: var(--text-blue);
     font-weight: bold;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/*******************************/
+.header-container {
+    padding: 0 1%;
+    margin-bottom: 50px;
+
+    .header-wrapper {
+        width: 100%;
+
+        .background-wrapper {
+            width: 100%;
+            border-radius: 50px;
+            overflow: hidden;
+
+            .header-home-container {
+                position: absolute;
+                top: 50%;
+                left: 2%;
+
+                .header-home-gid {
+                    gap: 20px;
+
+                    .header-home-text {
+                        h3 {
+                            display: inline-block;
+                            padding: 5px 15px;
+                            border: 1px solid black;
+                            border-radius: 50px;
+                        }
+
+                        h1 {
+                            font-weight: 400;
+                            font-size: 87px;
+                        }
+
+                        h2 {
+                            font-size: 87px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/****************/
+
+.section-container {
+    padding: 0 1%;
+    gap: 50px;
+    margin-bottom: 50px;
+
+    .section-content {
+        padding: 30px;
+        background-color: white;
+        border-radius: 20px;
+        gap: 20px;
+
+        &:hover {
+            span.line {
+                &::before {
+                    transition: 0.2s;
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .break {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: rgba(0, 0, 0, .2);
+
+            span.line {
+                position: relative;
+                height: 1px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, .2);
+                
+
+                &::before {
+                    content: "";
+                    height: 1px;
+                    width: 0%;
+                    background-color: rgba(0, 0, 0, .8);
+                    position: absolute;
+                    left: 0;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
 }
 
 /*******************************/

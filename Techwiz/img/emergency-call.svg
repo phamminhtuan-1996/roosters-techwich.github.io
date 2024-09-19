@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1 {
+      fill: none;
+      stroke: #df2c03;
+      stroke-width: 11px;
+      }
+
+      .cls-1, .cls-2 {
+      stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3 {
+      fill: #df2c03;
+      }
+
+      .cls-2 {
+      stroke: #fff;
+      stroke-width: 2px;
+      }
+
+      .cls-3 {
+      opacity: 0.5;
+      }
+
+
+      #plus {
+      animation: flash-bounce 2s cubic-bezier(0,1.42,.99,-0.16) infinite, fade 2s
+      cubic-bezier(1,0,1,-0.07) infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+      scale: 0;
+      }
+
+      @keyframes fade{
+      to{
+      opacity: 0;
+      }
+      }
+      @keyframes flash-bounce {
+      to{
+      scale: 1;
+      }
+      }
+
+      #circle-out {
+      animation: zoomOut 2s cubic-bezier(0,1.68,1,-0.28) infinite,
+      fade 2s cubic-bezier(1,0,1,-0.07) infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+      opacity: 1;
+      scale: 0;
+      }
+
+      @keyframes zoomOut {
+      to{
+      scale: 1.2;
+      }
+      }
+    </style>
+  </defs>
+  <g id="emergency-call" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <circle class="cls-1" id="circle-out" cx="30.02" cy="30.02" r="24.52" />
+      <path class="cls-2" id="plus"
+        d="M54.51,21.26H40.59a1.79,1.79,0,0,1-1.8-1.8V5.54A1.81,1.81,0,0,0,37,3.74H23.06a1.81,1.81,0,0,0-1.8,1.8V19.46a1.79,1.79,0,0,1-1.8,1.8H5.54a1.81,1.81,0,0,0-1.8,1.8V37a1.81,1.81,0,0,0,1.8,1.8H19.46a1.79,1.79,0,0,1,1.8,1.8V54.51a1.81,1.81,0,0,0,1.8,1.8H37a1.81,1.81,0,0,0,1.8-1.8V40.59a1.79,1.79,0,0,1,1.8-1.8H54.51a1.81,1.81,0,0,0,1.8-1.8V23.06A1.81,1.81,0,0,0,54.51,21.26Z" />
+    </g>
+  </g>
+
+</svg>

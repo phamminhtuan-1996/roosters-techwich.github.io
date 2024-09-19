@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="57" viewBox="0 0 65 60">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+      fill: none;
+      stroke: #0071bc;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+      }
+
+      .cls-2 {
+      stroke-linecap: round;
+      }
+
+      #ambulance-wheel{
+      animation: roll 1s linear infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+      }
+
+      @keyframes roll {
+      0% {
+      transform: rotate(0deg);
+      }
+      100%{
+      transform: rotate(360deg);
+      }
+      }
+
+      #ambulance-body{
+      animation: bounce 0.5s linear infinite;
+      }
+
+      @keyframes bounce {
+      0% {
+      transform: translateY(0px);
+      }
+      50%{
+      transform: translateY(-2px);
+      }
+      100%{
+      transform: translateY(0px)
+      }
+
+      }
+
+      #ambulance-light {
+      animation: flash 0.5s steps(2, end) infinite;
+      }
+
+      @keyframes flash {
+      to {
+      opacity: 0;
+      }
+      }
+    </style>
+  </defs>
+  <g id="ambulance-body" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path class="cls-1"
+          d="M61,50.62l0-4.3,0-7.39-4.52-2.88A3.78,3.78,0,0,1,55,34.28l-5.68-14a2.8,2.8,0,0,0-2.57-1.81H37.38v.12H28.76v-.12H4.29A3.42,3.42,0,0,0,1,22V50.57H6.62c0-.09,0-.18,0-.28a9.18,9.18,0,0,1,.89-4,8,8,0,0,1,7.19-4.73,8,8,0,0,1,7.19,4.73,9.18,9.18,0,0,1,.9,4c0,.1,0,.2,0,.3H39.5a3,3,0,0,1,0-.31,9.18,9.18,0,0,1,.9-4,7.83,7.83,0,0,1,14.38,0,9.18,9.18,0,0,1,.89,4c0,.11,0,.22,0,.33ZM27.74,31.82H23.86V36H20V31.82H16.11V27.64H20V23.47h3.88v4.17h3.88Zm13.6,3.64a1.86,1.86,0,0,1-1.79-1.92V24a1.06,1.06,0,0,1,1-1.1H44.3A1.54,1.54,0,0,1,45.73,24l3.84,11.43Z" />
+        <rect class="cls-1" x="28.76" y="15.4" width="8.62" height="3.05" />
+        <path class="cls-1" d="M36,9.93a2.92,2.92,0,1,0-5.82,0v5.4H36Z" />
+      </g>
+      <g id="ambulance-light">
+        <line class="cls-2" x1="24.94" y1="9.82" x2="27.53" y2="9.82" />
+        <line class="cls-2" x1="37.49" y1="5.37" x2="39.32" y2="3.41" />
+        <line class="cls-2" x1="27.29" y1="3.41" x2="29.11" y2="5.37" />
+        <line class="cls-2" x1="33.27" y1="3.78" x2="33.27" y2="1" />
+        <line class="cls-2" x1="39.3" y1="9.81" x2="41.88" y2="9.81" />
+      </g>
+
+    </g>
+  </g>
+  <g id="ambulance-wheel">
+    <path class="cls-1"
+      d="M14.79,45.14a5.44,5.44,0,0,0,0,10.86,5.45,5.45,0,0,0,0-10.86ZM15.56,48a.57.57,0,1,1,.44-.56A.51.51,0,0,1,15.56,48Z" />
+  </g>
+  <g id="ambulance-wheel">
+    <path class="cls-1"
+      d="M47.83,45.14a5.45,5.45,0,1,0,5,5.43A5.25,5.25,0,0,0,47.83,45.14ZM48.6,48a.57.57,0,1,1,.44-.56A.51.51,0,0,1,48.6,48Z" />
+  </g>
+</svg>
