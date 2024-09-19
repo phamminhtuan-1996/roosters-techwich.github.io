@@ -1,17 +1,33 @@
-.details-car__header {
-  display: flex;
-}
-.details-car__header--img {
-  width: 500px;
-}
 .details-car__header--img img {
   width: 100%;
+  object-fit: cover;
+}
+.details-car__header--details {
+  margin-top: 1rem;
+}
+.details-car__title {
+  display: flex;
+  justify-content: space-between;
+}
+.details-car .details {
+  display: flex;
 }
 .details-car .details__item {
   width: 100px;
   height: 100px;
-  background-color: gray;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.details-car .details__item i {
+  font-size: 30px;
+  color: #6991D5;
+  margin-bottom: 10px;
+}
+.details-car .details__item span {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=details-car.css.map */
