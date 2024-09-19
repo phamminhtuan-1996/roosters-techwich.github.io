@@ -1,97 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-}
-
-:root {
-    --bg-lightblue: #F0F7FD;
-    --text-blue: #3368C6;
-    --text-dark-blue: #031B4E;
-    --text-grey: grey;
-}
-
-body {
-    background-color: var(--bg-lightblue);
-    padding: 20px;
-}
-
-.details-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.details-car {
-    background-color: white;
-    width: 400px;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.details-car__header {
-    display: flex;
-    padding: 20px;
-}
-
 .details-car__header--img img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
-
 .details-car__header--details {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  margin-top: 1rem;
+}
+.details-car__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.details-car__title--text {
+  margin-bottom: 1rem;
+}
+.details-car__title--price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #e74c3c;
+  display: block;
+}
+.details-car .details {
+  display: flex;
+  justify-content: space-between;
+}
+.details-car .details__item {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.details-car .details__item i {
+  font-size: 30px;
+  color: #6991D5;
+  margin-bottom: 10px;
+}
+.details-car .details__item span {
+  font-weight: bold;
 }
 
-.details ul {
-    list-style: none;
-    padding: 0;
-}
-
-.details__item {
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: var(--text-dark-blue);
-}
-
-.details__item:last-child {
-    margin-bottom: 0;
-}
-
-.details-car__title h1 {
-    font-size: 32px;
-    font-weight: normal;
-    text-align: center;
-    padding: 10px 0;
-    color: var(--text-dark-blue);
-}
-
-.details-car__title p {
-    font-size: 14px;
-    color: var(--text-grey);
-    text-align: center;
-    padding: 0 10px 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: var(--text-blue);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: var(--text-dark-blue);
-}
+/*# sourceMappingURL=details-car.css.map */
