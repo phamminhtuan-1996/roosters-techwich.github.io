@@ -1,0 +1,94 @@
+h1 {
+    font-size: 34px !important;
+}
+
+h2 {
+    font-size: 30px !important;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.w500 {
+    width: 100%;
+}
+
+.column-3,
+.column-2,
+.column-2-3 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.row {
+    flex-direction: column;
+}
+
+/********************/
+.section-container {
+    padding: 0 10%;
+}
+
+
+.section-wrapper {
+    gap: 50px;
+
+    .contact-bg {
+        padding: 0 5%;
+    }
+}
+
+footer .footer-wrapper .footer-col2 h5 {
+    display: none;
+}
+
+footer .footer-wrapper .sub-footer {
+    gap: 20px 0;
+    align-items: center;
+
+    span {
+        display: none;
+    }
+
+    div {
+        align-items: center;
+    }
+}
+
+.contact-us {
+    .container {
+        padding: 0;
+    }
+
+    .section-wrapper {
+        border-radius: 0 0 30px 30px;
+    }
+}
+
+/*****************************/
+
+.details-car__header .details {
+    flex-direction: row;
+}
+
+.details-car__header--img {
+    height: auto;
+}
+
+.details-car__title {
+    width: 100%;
+}
+
+/************contact page ************/
+.detail-info {
+    .detail-info__wrapper {
+        gap: 30px;
+        .detail-info__item {
+            width: 100% !important;
+        }
+    }
+}
