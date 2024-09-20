@@ -96,6 +96,7 @@
     </header>
 
     <div class="container">
+        <h1 align="center">Data not found</h1>
         <!-- <div class="details-car column">
             <div class="details-car__header row">
                 <div class="details-car__header--img">
@@ -202,7 +203,12 @@
         $(document).ready(function() {
             let xhtml = ''
             const urlParams = new URLSearchParams(window.location.search);
+            console.log(urlParams);
+            if (urlParams.size === 0) {
+                return;
+            }
             const idParam = parseInt(urlParams.toString().replace('id=', ''));
+
             console.log(idParam)
             $.get('data.json', function (res) {
                 console.log(res);
