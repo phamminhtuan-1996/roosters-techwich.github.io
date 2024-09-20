@@ -111,8 +111,8 @@
         {
             "id": 10, 
             "title": "Ambulance Car", 
-            "purpose": "Car",
-            "dt_purpose":"C",
+            "purpose": "Funeral",
+            "dt_purpose":"F",
             "hospital":"",
             "location":"HoChiMinh City",
             "dt_location":"HCM",
