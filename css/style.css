@@ -24,6 +24,7 @@
     --color-deep2-ko: #11b1f0;
     --color-deep3-ko:#c0392b;
     --color-deep4-ko:#ffaf7b;
+    --color-radiant-yellow: #F79F1F;
 
 }
 
@@ -304,7 +305,7 @@ button.order {
     text-transform: uppercase;
     opacity: 0.8;
     box-sizing: border-box;
-    color: var(--color-deep-ko);
+    color: var(--color-radiant-yellow);
 }
 
 .color-icon {

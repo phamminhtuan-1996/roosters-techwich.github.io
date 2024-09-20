@@ -83,6 +83,42 @@
             "price": "610.000 vnđ", 
             "image":"https://hyundai-mienbac.com/wp-content/uploads/2021/09/xe-gaz-cuu-thuong-nhap-khau-nga-4-1280x640.jpg", 
             "descriptions": "Providing ambulance services, and supporting the transportation of patients domestically and internationally. Providing medical services for conferences, seminars, events, cultural and social activities (art programs, live music and dance shows, festivals, exhibitions, fairs, etc.); sports activities, etc.." 
+        },
+        {
+            "id": 8, 
+            "title": "Ambulance Extra", 
+            "purpose": "Emergency Ambulance",
+            "dt_purpose":"EA",
+            "hospital":"",
+            "location":"DaNang City",
+            "dt_location":"DN",
+            "price": "1.200.000 vnđ", 
+            "image":"https://xeotocuuthuong.vn/uploads/images/2024/04/image_1200x_660a1df0532f6.jpg", 
+            "descriptions": "Providing ambulance services, and supporting the transportation of patients domestically and internationally. Providing medical services for conferences, seminars, events, cultural and social activities (art programs, live music and dance shows, festivals, exhibitions, fairs, etc.); sports activities, etc.." 
+        },
+        {
+            "id": 9, 
+            "title": "Ambulance Plus", 
+            "purpose": "Hospital Transfer",
+            "dt_purpose":"HT",
+            "hospital":"",
+            "location":"HoChiMinh City",
+            "dt_location":"HCM",
+            "price": "970.000 vnđ", 
+            "image":"https://xeotocuuthuong.vn/uploads/images/2022/03/image_1200x_622788503f9f8.jpg", 
+            "descriptions": "Providing ambulance services, and supporting the transportation of patients domestically and internationally. Providing medical services for conferences, seminars, events, cultural and social activities (art programs, live music and dance shows, festivals, exhibitions, fairs, etc.); sports activities, etc.." 
+        },
+        {
+            "id": 10, 
+            "title": "Ambulance Car", 
+            "purpose": "Car",
+            "dt_purpose":"C",
+            "hospital":"",
+            "location":"HoChiMinh City",
+            "dt_location":"HCM",
+            "price": "350.000 vnđ", 
+            "image":"https://xeotocuuthuong.vn/uploads/images/2021/06/image_380x226_60d94027b0467.jpg", 
+            "descriptions": "Providing ambulance services, and supporting the transportation of patients domestically and internationally. Providing medical services for conferences, seminars, events, cultural and social activities (art programs, live music and dance shows, festivals, exhibitions, fairs, etc.); sports activities, etc.." 
         }
     ]
 }
