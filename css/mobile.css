@@ -87,8 +87,83 @@ footer .footer-wrapper .sub-footer {
 .detail-info {
     .detail-info__wrapper {
         gap: 30px;
+
         .detail-info__item {
             width: 100% !important;
         }
     }
+}
+
+.navbar-menu-content {
+    flex-direction: column;
+    text-align: center;
+}
+.navbar{
+    position: absolute;
+}
+#toggle {
+    display: block;
+    position: relative;
+    z-index: 999;
+}
+
+.navbar-menu,
+.navbar-find {
+    display: none;
+}
+
+.navbar-container {
+    padding-left: 10px;
+    padding-right: 0;
+    width: auto;
+    gap: 50px;
+    display: inline-flex;
+    margin-left: 50%;
+}
+
+.navbar-menu {
+    margin-top: 40px;
+    position: absolute;
+    text-align: center;
+    background-color: var(--color-clouds);
+    top: 10px;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+    animation: anima ease 0.3s;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.navbar-menu-left {
+    display: block;
+}
+
+.navbar-menu-right {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+.navbar-menu-item {
+    display: block;
+    color: var(--color-blue-nights);
+    border-bottom: 1px solid var(--text-grey);
+    text-align: left;
+}
+
+#find {
+    display: none;
+}
+
+#flex {
+    flex-direction: column;
+}
+
+.title_content-list {
+    right: 0;
+    top: 120px;
+    width: 220px;
+    background-color: white;
+    z-index: 999;
 }

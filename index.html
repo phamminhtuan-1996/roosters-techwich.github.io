@@ -10,20 +10,58 @@
 
 
     <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/tablet.css">
-    
+
     <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css">
 </head>
 
 <body>
-    <!-- <nav class="nav-main">
-        <ul class="nav-main__list">
-            <li class="nav-main__list--item"><a href="#">Home</a></li>
-            <li class="nav-main__list--item"><a href="#">About</a></li>
-            <li class="nav-main__list--item"><a href="#">Products</a></li>
-            <li class="nav-main__list--item"><a href="#">News</a></li>
-            <li class="nav-main__list--item"><a href="#">Contact</a></li>
-        </ul>
-    </nav> -->
+    <nav class="navbar">
+
+        <div class="navbar-container">
+            <div class="navber-logo">
+                <a class="navber-logo-a" href="">
+                    <img class="navber-logo-img"
+                        src="	https://xcare-demo.pbminfotech.com/demo2/wp-content/uploads/sites/5/2024/01/logo.svg"
+                        alt="logo">
+                </a>
+            </div>
+            <div id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-menu-left"></div> <!--tạo background cho menu-->
+                <div class="navbar-menu-right">
+                    <ul class="navbar-menu-content">
+                        <li><a class="navbar-menu-item" href="#">home <span><i
+                                        class="fa fa-heartbeat color-icon"></i></span> </a></li>
+                        <li><a class="navbar-menu-item title_container" href="#">Services <span><i
+                                        class="fa fa-angle-down color-icon"></i></span></a></li>
+                        <ul class="title_content-list">
+                            <li class="title_content-item"><a href="">Services 1</a></li>
+                            <li class="title_content-item"><a href="">Services 1</a></li>
+                            <li class="title_content-item"><a href="">Services 1</a></li>
+                            <li class="title_content-item"><a href="">Services 1</a></li>
+                        </ul>
+                        <li><a class="navbar-menu-item" href="#">Details <span><i
+                                        class="fa fa-ambulance color-icon"></i></span> </a></li>
+                        <li><a class="navbar-menu-item" href="#">Contact Us <span><i
+                                        class="fa-solid fa-phone-volume color-icon"></i></span> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div id="flex" class="navbar-find">
+                <div class="navbar-form">
+                    <form action="#" class="form">
+                        <input type="text" id="form-text" placeholder="search ..... "></input>
+                        <label class="form-text" for="form-text">search</label>
+                    </form>
+                </div>
+                <div class="navbar-find-item"></div>
+                <i id="find" class="fa-solid fa-magnifying-glass"></i>
+            </div> -->
+        </div>
+        </div>
+    </nav>
 
 
     <header>
@@ -262,7 +300,20 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="script/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
 
+    <script type="text/javascript">
+        console.log(document.querySelectorAll(".color-icon").length)
+        setInterval(function () {
+            for (let i = 0; document.querySelectorAll(".color-icon").length; i++) {
+                document.querySelectorAll(".color-icon")[i].classList.toggle('color-icon-item')
+
+            }
+
+        }, 1000)
+
+    </script>
 
 </body>
 
