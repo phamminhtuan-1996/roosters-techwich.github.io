@@ -411,10 +411,7 @@ button.order {
                         h3 {
                             display: inline-block;
                             padding: 5px 15px;
-<<<<<<< HEAD
                             border: 1px solid var(--color-deep2-ko);
-=======
->>>>>>> af3a0675ea5e799059e065cbc6c311b4f235e2da
                             border-radius: 50px;
                         }
 
