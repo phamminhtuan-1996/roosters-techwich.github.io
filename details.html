@@ -239,7 +239,6 @@
 
                 </div>
                 <div class="details-car__title column">
-
                     <h2 class="details-car__title--text">${result.title}</h2>
                     <div class="details-car__description">
                         <p>${result.descriptions}</p>
@@ -250,10 +249,45 @@
                     </ul>
                     <button class="order">Book now</button>
                 </div>
+                <div  class="details-car__feedback column">
+                    <div class="details-car__feedback--start">
+                        <i class="fa-regular fa-star" value="1"></i>    
+                        <i class="fa-regular fa-star" value="2"></i>    
+                        <i class="fa-regular fa-star" value="3"></i>    
+                        <i class="fa-regular fa-star" value="4"></i>    
+                        <i class="fa-regular fa-star" value="5"></i>    
+                    </div>
+                    <form>
+                        <p><label for="w3review">Review of EAmbulance:</label></p>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                        <br>
+                       <button align="center" class="send">Send</button>
+                    </form>
+                </div>
              </div>`;
-             console.log('123',$('.container'))
             $('.container').html(xhtml);
+
+             $('.send').click(() => {
+                $('.container').html('<h1 align="center">Thank you for your comment</h1>');
+             })
+            function removeAllStart() {
+                for (let index = 1; index <= 5; index++) {
+                    let DOM = $(`.details-car__feedback--start i[value="${index}"]`);
+                    DOM.attr('class', 'fa-regular fa-star');
+                }
+            }
+            $('.details-car__feedback--start i').click(function() {
+                removeAllStart();
+                const valueTarget = parseInt(this.getAttribute('value'));
+                for (let index = 1; index <= valueTarget; index++) {
+                    let DOM = $(`.details-car__feedback--start i[value="${index}"]`);
+                    DOM.attr('class', 'fa-solid fa-star');
+                }
             });
+            });
+           
+            // <i class="fa-solid fa-star"></i>
+
             
         })
     </script>
