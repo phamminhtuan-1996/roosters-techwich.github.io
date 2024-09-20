@@ -1,9 +1,9 @@
 h1 {
-    font-size: 34px !important;
+    font-size: 24px !important;
 }
 
 h2 {
-    font-size: 30px !important;
+    font-size: 26px !important;
 }
 
 h4 {
@@ -99,26 +99,34 @@ footer .footer-wrapper .sub-footer {
     text-align: center;
 }
 .navbar{
-    position: absolute;
+    position: relative;
+    width: 100%;
+    top: 5%;
 }
 #toggle {
     display: block;
     position: relative;
     z-index: 999;
 }
-
+.navber-logo{
+    display: none;
+}
 .navbar-menu,
 .navbar-find {
     display: none;
 }
-
+.navbar.sticky{
+    display: none;
+}
 .navbar-container {
-    padding-left: 10px;
-    padding-right: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 0;
     width: auto;
-    gap: 50px;
-    display: inline-flex;
-    margin-left: 50%;
+    margin-top: 5%;
+    right: 5%;
+    justify-content: flex-end;
 }
 
 .navbar-menu {

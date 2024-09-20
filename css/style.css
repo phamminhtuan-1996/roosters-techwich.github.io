@@ -217,14 +217,14 @@ button.order {
 
 /**************************/
 #toggle {
-    background-color: var(--color-shadowed-steel);
-    color: var(--color-clouds);
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
+    #toggle-wrapper{
+        background-color: var(--color-shadowed-steel);
+        color: var(--color-clouds);
+        padding: 10px;
+        font-size: 12px;
+        cursor: pointer;
+    }
     display: none;
-    position: absolute;
-    top: 0px;
 }
 
 #flex {
@@ -274,7 +274,7 @@ button.order {
 /* navber-logo */
 
 .navber-logo-img {
-    height: 30px
+    height: 40px
 }
 
 .navbar-menu-content {
@@ -422,7 +422,6 @@ button.order {
     padding: 1% 1%;
     margin-bottom: 50px;
     width: 100%;
-    height: 100vh;
     position: relative;
 
     .header-wrapper {
@@ -647,6 +646,7 @@ button.order {
                 input,
                 textarea {
                     width: 100%;
+                    background-color: transparent;
                     border: none;
                     border-bottom: 1px solid grey;
                     padding: 10px;
