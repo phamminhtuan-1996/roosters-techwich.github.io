@@ -1,4 +1,26 @@
+console.log(document.querySelectorAll(".color-icon").length)
+setInterval(function () {
+    for (let i = 0; document.querySelectorAll(".color-icon").length; i++) {
+        document.querySelectorAll(".color-icon")[i].classList.toggle('color-icon-item')
+
+    }
+
+}, 1000)
+
+
 $(document).ready(function () {
+    var num = 50; //number of pixels before modifying styles
+
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > num) {
+            $('.navbar').addClass('sticky');
+        } else {
+            $('.navbar').removeClass('sticky');
+        }
+    });
+
+
+
     /************* */
     $('#toggle').click(function () {
         $('.navbar-menu').slideToggle();
@@ -11,8 +33,8 @@ $(document).ready(function () {
     $('.title_container').click(function () {
         $('.title_content-list').slideToggle();
     })
-    
-    $('.call-now').click(function(){
+
+    $('.call-now').click(function () {
         $('.call-now--form').slideToggle();
     })
     /************************** */

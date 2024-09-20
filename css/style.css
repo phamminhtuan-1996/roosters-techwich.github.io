@@ -25,6 +25,8 @@
     --color-deep3-ko:#c0392b;
     --color-deep4-ko:rgb(255, 175, 123);
     --gradient-1: linear-gradient(to top bottom ,rgb(192, 57, 43),rgb(255, 175, 123));
+    --color-deep4-ko:#ffaf7b;
+    --color-radiant-yellow: #F79F1F;
 
 }
 
@@ -218,14 +220,14 @@ button.order {
 
 /**************************/
 #toggle {
-    background-color: var(--color-shadowed-steel);
-    color: var(--color-clouds);
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
+    #toggle-wrapper{
+        background-color: var(--color-shadowed-steel);
+        color: var(--color-clouds);
+        padding: 10px;
+        font-size: 12px;
+        cursor: pointer;
+    }
     display: none;
-    position: absolute;
-    top: 0px;
 }
 
 #flex {
@@ -277,7 +279,7 @@ button.order {
 /* navber-logo */
 
 .navber-logo-img {
-    height: 30px
+    height: 40px
 }
 
 .navbar-menu-content {
@@ -307,7 +309,7 @@ button.order {
     text-transform: uppercase;
     opacity: 0.8;
     box-sizing: border-box;
-    color: var(--color-deep-ko);
+    color: var(--color-radiant-yellow);
 }
 
 .color-icon {
@@ -425,7 +427,6 @@ button.order {
     padding: 1% 1%;
     margin-bottom: 50px;
     width: 100%;
-    height: 100vh;
     position: relative;
 
     .header-wrapper {
@@ -650,6 +651,7 @@ button.order {
                 input,
                 textarea {
                     width: 100%;
+                    background-color: transparent;
                     border: none;
                     border-bottom: 1px solid grey;
                     padding: 10px;
@@ -877,7 +879,11 @@ input {
 
         justify-content: center;
         justify-items: center;
-
+        .fp-item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         .fp-item-img {
             width: 100%;
             height: 200px;
@@ -885,7 +891,7 @@ input {
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
         }
 
@@ -897,7 +903,10 @@ input {
 
             .fp-item-detail--group1 {
                 display: flex;
-                gap: 30px;
+                gap: 20px;
+            }
+            .fp-item-detail--price{
+                color: var(--color-naturcial-flower);
             }
         }
     }
