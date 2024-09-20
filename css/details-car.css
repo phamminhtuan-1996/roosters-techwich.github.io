@@ -62,4 +62,21 @@
   font-weight: bold;
 }
 
+.details-car__feedback button {
+  margin: auto;
+  display: block;
+}
+.details-car__feedback textarea {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.details-car__feedback--start  {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.details-car__feedback i {
+  font-size: 20px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=details-car.css.map */
