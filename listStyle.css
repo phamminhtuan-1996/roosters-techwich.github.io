@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #3368C6;
+    --secondary-color: #F0F7FD;
+    --text-color: #031B4E;
+    --accent-color: #F0F7FD;
+    --button-background: #4CAF50;
+    --button-text: #fff;
+    --button-border-color: #ccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#filter-container {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+#filter-container button {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--button-border-color);
+    cursor: pointer;
+
+    &:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    }
+}
+
+#ambulance-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ambulance-entry {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid var(--button-border-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.ambulance-entry h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.ambulance-entry p {
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.ambulance-entry img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ambulance-entry button {
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: 1px solid var(--button-border-color);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+    background-color: darken(var(--button-background), 10%);
+    }
+}
