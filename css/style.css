@@ -27,7 +27,7 @@
     --gradient-1: linear-gradient(to top bottom ,rgb(192, 57, 43),rgb(255, 175, 123));
     --color-deep4-ko:#ffaf7b;
     --color-radiant-yellow: #F79F1F;
-
+    --color-yellow: #FFC900;
 }
 
 
@@ -109,6 +109,7 @@ button {
     border: none;
     border-radius: 50px;
     transition: all 0.5s;
+    font-size: 80%;
 
     i {
         margin-left: 5px;
@@ -249,7 +250,7 @@ button.order {
     top: 50px;
     width: 90%;
     background-color: #90e7e375;
-    
+    border-radius: 15px;
 }
 
 .navbar.sticky {
@@ -310,9 +311,8 @@ button.order {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    opacity: 0.8;
     box-sizing: border-box;
-    color: var(--color-radiant-yellow);
+    color: #474787;
 }
 
 .color-icon {
@@ -460,9 +460,9 @@ button.order {
                 transform: translateY(-50%);
 
                 button {
-                    font-size: 20px;
                     color: var(--color-naturcial-flower);
                     opacity: 0.9;
+                    font-weight: 700;
                 }
 
                 .header-home-gid {
