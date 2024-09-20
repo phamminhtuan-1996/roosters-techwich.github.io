@@ -500,6 +500,14 @@ button.order {
                             font-weight: 700;
                             color: var(--color-deep2-ko);
                         }
+                        
+                        h4 {
+                            color: var(--color-deep2-ko)
+                        }
+
+                            i {
+                                color: var(--color-carmine-pink);
+                            }
 
                     }
                     
@@ -885,8 +893,8 @@ input {
     }
 
     .fp-list-item {
-        margin-top: 20px;
         width: 100%;
+        background-color: #dfe6e9;
 
         display: grid;
         grid-template-columns: repeat(auto-fill, 300px);
@@ -899,6 +907,9 @@ input {
             display: flex;
             flex-direction: column;
             gap: 10px;
+        }
+        .fp-item-img:nth-child(1) {
+            margin-top: 20px;
         }
         .fp-item-img {
             width: 100%;
@@ -923,6 +934,7 @@ input {
             }
             .fp-item-detail--price{
                 color: var(--color-naturcial-flower);
+                margin-bottom: 10px;
             }
         }
     }
