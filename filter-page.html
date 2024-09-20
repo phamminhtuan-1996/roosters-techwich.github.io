@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    
     <nav class="navbar">
 
         <div class="navbar-container">
@@ -96,16 +96,16 @@
                 <div class="fp-filter-wrapper row">
                     <div class="fp-filter-group1">
                         <select name="City" id="filter-b-city">
-                            <option value="">All</option>
-                            <option value="">Ho Chi Minh</option>
-                            <option value="">Ha Noi</option>
-                            <option value="">Da Nang</option>
+                            <option value="All">All</option>
+                            <option value="Ho Chi Minh">Ho Chi Minh</option>
+                            <option value="Ha Noi">Ha Noi</option>
+                            <option value="Da Nang">Da Nang</option>
                         </select>
                         <select name="purpose" id="filter-b-purpose">
-                            <option value="">All</option>
-                            <option value="">Emergency Ambulance</option>
-                            <option value="">Hospital Transfer</option>
-                            <option value="">Funeral</option>
+                            <option value="All">All</option>
+                            <option value="EA">Emergency Ambulance</option>
+                            <option value="HT">Hospital Transfer</option>
+                            <option value="F">Funeral</option>
                         </select>
                     </div>
                     <div class="fp-filter-group2">
@@ -124,7 +124,7 @@
                 </div>
 
                 <div class="fp-list-item">
-                    <!-- <div class="fp-item">
+                    <div class="fp-item" data-location="Ha Noi" data-purpose="HT">
                         <div class="fp-item-img">
                             <img src="/img/am_sample_1.png" alt="">
                         </div>
@@ -134,7 +134,7 @@
                             </div>
                             <div class="fp-item-detail--group1">
                                 <div class="fp-item-detail--place">
-                                    Ho Chi Minh
+                                    Hà Nội
                                 </div>
                                 <div class="fp-item-detail--purpose">
                                     Hospital Transfer
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="fp-item">
+                    <div class="fp-item" data-location="Ho Chi Minh" data-purpose="F">
                         <div class="fp-item-img">
                             <img src="/img/am_sample_1.png" alt="">
                         </div>
@@ -155,10 +155,10 @@
                             </div>
                             <div class="fp-item-detail--group1">
                                 <div class="fp-item-detail--place">
-                                    Ho Chi Minh
+                                    Hồ Chí Minh
                                 </div>
                                 <div class="fp-item-detail--purpose">
-                                    Hospital Transfer
+                                    Funeral
                                 </div>
                             </div>
                             <div class="fp-item-detail--price">
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="fp-item">
+                    <div class="fp-item" data-location="Da Nang" data-purpose="EA">
                         <div class="fp-item-img">
                             <img src="/img/am_sample_1.png" alt="">
                         </div>
@@ -176,17 +176,17 @@
                             </div>
                             <div class="fp-item-detail--group1">
                                 <div class="fp-item-detail--place">
-                                    Ho Chi Minh
+                                    Da Nang
                                 </div>
                                 <div class="fp-item-detail--purpose">
-                                    Hospital Transfer
+                                    Emergency
                                 </div>
                             </div>
                             <div class="fp-item-detail--price">
                                 300.000 VND
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,7 +253,10 @@
     </footer>
 
     <script src="script/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript">
+
+
+
+    <!-- <script type="text/javascript">
         $.get('data.json', function (ketqua) {
             var fp_item = '';
             ketqua.list.forEach(function (item) {
@@ -288,7 +291,9 @@
             });
             $(".fp-list-item").html(fp_item);
         });
-    </script>
+    </script> -->
+
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 
 </html>
