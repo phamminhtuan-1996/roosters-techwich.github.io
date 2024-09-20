@@ -488,3 +488,58 @@ footer {
         }
     }
 }
+
+/***************************/
+input {
+    accent-color: red;
+}
+
+.fp-wrapper {
+    .fp-filter-wrapper {
+        padding: 10px;
+        display: flex;
+        color: var(--bg-lightblue);
+        background-color: var(--text-blue);
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+
+        select {
+            width: 100px;
+        }
+
+        .filter-price-wrapper {
+            gap: 10px;
+        }
+    }
+
+    .fp-list-item {
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 240px);
+        grid-template-columns: repeat(auto-fill, 300px);
+        gap: 15px;
+        grid-auto-flow: row dense;
+
+        justify-content: center;
+        justify-items: center;
+        .fp-item-img{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .fp-item-detail{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            .fp-item-detail--group1{
+                display: flex;
+                gap: 30px;
+            }
+        }
+    }
+}
