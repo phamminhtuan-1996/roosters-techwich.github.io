@@ -21,6 +21,7 @@
     --color-pink-gl: #ff7979;
     --color-carmine-pink: #eb4d4b;
     --color-deep-ko: #30336b;
+    --color-deep2-ko: #11b1f0;
 }
 
 
@@ -44,6 +45,8 @@ h2 {
 
 h3 {
     font-size: 12px;
+    text-transform: uppercase;
+    color: var(--color-deep2-ko);
 }
 
 h4 {
@@ -394,7 +397,7 @@ button.order {
                         h3 {
                             display: inline-block;
                             padding: 5px 15px;
-                            border: 1px solid black;
+                            border: 1px solid var(--color-deep2-ko);
                             border-radius: 50px;
                         }
 
