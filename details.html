@@ -96,7 +96,7 @@
     </header>
 
     <div class="container">
-        <div class="details-car column">
+        <!-- <div class="details-car column">
             <div class="details-car__header row">
                 <div class="details-car__header--img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Armstrong_Ambulance_P17.jpg" alt="">
@@ -132,7 +132,7 @@
                 <button class="order">Book now</button>
             </div>
 
-        </div>
+        </div> -->
     </div>
 
     <footer>
@@ -197,9 +197,59 @@
 
 
 
-    <script src="./jquery-3.7.1.min.js"></script>
-    <script src="./details-car.js">
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let xhtml = ''
+            const urlParams = new URLSearchParams(window.location.search);
+            const idParam = parseInt(urlParams.toString().replace('id=', ''));
+            console.log(idParam)
+            $.get('data.json', function (res) {
+                console.log(res);
+                const {list} = res;
+                console.log(list);
+                let result = list.find((item) => item.id === idParam);
+                console.log(result);
+                xhtml += ` <div class="details-car column">
+                <div class="details-car__header row">
+                    <div class="details-car__header--img">
+                        <img src="${result.image}" alt="">
+                    </div>
 
+                    <ul class="details column" type="none">
+                        <li class="details__item">
+                            <i class="fa-solid fa-ruler"></i>
+                            <span>Size Of The Vehicle</span>
+                        </li>
+                        <li class="details__item">
+                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+                            <span> Oxygen Tank</span>
+                        </li>
+                        <li class="details__item"><i class="fa-solid fa-heart-pulse"></i><span>Heart Rate Monitor</span>
+                        </li>
+                        <li class="details__item"><i class="fa-solid fa-suitcase-medical"></i> <span>First Aid
+                                Kits</span></li>
+                    </ul>
+
+                </div>
+                <div class="details-car__title column">
+
+                    <h2 class="details-car__title--text">${result.title}</h2>
+                    <div class="details-car__description">
+                        <p>${result.descriptions}</p>
+                    </div>
+                    <span class="details-car__title--price">${result.price}</span>
+                    <ul class="details-car__point">
+                        <li class="details-car__point--item"></li>
+                    </ul>
+                    <button class="order">Book now</button>
+                </div>
+             </div>`;
+             console.log('123',$('.container'))
+            $('.container').html(xhtml);
+            });
+            
+        })
     </script>
 </body>
 
