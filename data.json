@@ -10,7 +10,7 @@
             "dt-location":"HCM",
             "price": "320.000 vnđ", 
             "image":"https://upload.wikimedia.org/wikipedia/commons/2/2c/Armstrong_Ambulance_P17.jpg", 
-            "descriptions": "An emergency ambulance is a specialized vehicle equipped with medical equipment and staffed by trained paramedics. It responds quickly to emergencies, providing immediate care and transporting patients to hospitals. Key features include life support systems, communication tools, and a patient care area." 
+            "descriptions": "An emergency ambulance is a specialized vehicle equipped with medical equipment and staffed by trained paramedics. It responds quickly to emergencies, providing immediate care and transporting patients to hospitals." 
         },
         {
             "id": 2, 
