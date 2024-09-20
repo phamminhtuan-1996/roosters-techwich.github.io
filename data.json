@@ -3,6 +3,7 @@
         {
             "id": 1, 
             "title": "Ten xe", 
+            "purpose": "Emergency Ambulance",
             "hospital":"",
             "location":"",
             "price": "420.000 vnđ", 
@@ -12,6 +13,7 @@
         {
             "id": 2, 
             "title": "Wulling", 
+            "purpose": "Hospital Transfer",
             "hospital":"",
             "location":"",
             "price": "420.000 vnđ", 
@@ -21,6 +23,7 @@
         {
             "id": 3, 
             "title": "Toyota Hiace",
+            "purpose": "Funeral",
             "hospital":"",
             "location":"",
             "price": "2.865.000 vnđ", 
@@ -30,6 +33,7 @@
         {
             "id": 4, 
             "title": "Hyundai Staria", 
+            "purpose": "Emergency Ambulance",
             "hospital":"",
             "location":"",
             "price": "910.000 vnđ", 
@@ -39,6 +43,7 @@
         {
             "id": 5, 
             "title": "Ford Transit Ambulance", 
+            "purpose": "Emergency Ambulance",
             "hospital":"",
             "location":"",
             "price": "1.090.000 vnđ", 
@@ -48,6 +53,7 @@
         {
             "id": 6, 
             "title": "Iveco Daily", 
+            "purpose": "Emergency Ambulance",
             "hospital":"",
             "location":"",
             "price": "910.000 vnđ", 
@@ -57,6 +63,7 @@
         {
             "id": 7, 
             "title": "Gaz Ambulance", 
+            "purpose": "Emergency Ambulance",
             "hospital":"",
             "location":"",
             "price": "910.000 vnđ", 
