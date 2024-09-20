@@ -7,10 +7,26 @@
 }
 
 :root {
-    --bg-lightblue: #F0F7FD;
-    --text-blue: #3368C6;
-    --text-dark-blue: #031B4E;
+    --text-while: #F5F5F5;
+    --text-grey: #5954629f;
+    --text-while: #F5F5F5;
+    --text-grey: #5954629f;
+    --color-cyanite: #0abde3;
+    --color-blue-nights: #353b48;
+    --color-naturcial-flower: #e84118;
+    --color-young-salmon: #ffb8b8;
+    --color-shadowed-steel: #4b4b4b;
+    --color-clouds: #ecf0f1;
+    --color-pink-gl: #ff7979;
+    --color-carmine-pink: #eb4d4b;
+    --color-deep-ko: #30336b;
+    --color-2-gradient-blue-to-purple: linear-gradient(135deg, #0abde3 0%, #ADCAD6 100%);
+    --color-2-gradient-light-greento-vivid-green: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+    --color-2-gradient-luminous-vivid-to-orange: linear-gradient(135deg, #FFB563 0%, #FC6471 100%);
+    --color-2-gradient--luminous-vivid-orange-to-red: linear-gradient(135deg, #ff7979 0%, #e84118 100%);
+    --wp-color-2-gradient-very-light-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
 }
+
 
 body {
     background-color: var(--bg-lightblue);
