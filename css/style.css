@@ -459,6 +459,12 @@ button.order {
                 left: 5%;
                 transform: translateY(-50%);
 
+                button {
+                    font-size: 20px;
+                    color: var(--color-naturcial-flower);
+                    opacity: 0.9;
+                }
+
                 .header-home-gid {
                     gap: 30px;
 
@@ -474,23 +480,29 @@ button.order {
 
                         h3 {
                             display: inline-block;
-                            padding: 5px 15px;
-                            color: rgb(144, 231, 227);
+                            font-size: 14px;
+                            padding: 10px 30px;
+                            color: #d63031; 
                             border: 1px solid #90e7e3;
                             border-radius: 50px;
+                            background-color: #b2bec3;
+                            opacity: 0.9;
                         }
 
                         h1 {
                             font-weight: 400;
                             font-size: 87px;
+                            color: #FA255E;
                         }
 
                         h2 {
                             font-size: 87px;
                             font-weight: 700;
+                            color: var(--color-deep2-ko);
                         }
 
                     }
+                    
                 }
             }
         }
