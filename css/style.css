@@ -874,7 +874,11 @@ input {
 
         justify-content: center;
         justify-items: center;
-
+        .fp-item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         .fp-item-img {
             width: 100%;
             height: 200px;
@@ -882,7 +886,7 @@ input {
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
         }
 
@@ -894,7 +898,10 @@ input {
 
             .fp-item-detail--group1 {
                 display: flex;
-                gap: 30px;
+                gap: 20px;
+            }
+            .fp-item-detail--price{
+                color: var(--color-naturcial-flower);
             }
         }
     }
