@@ -20,9 +20,7 @@
         <div class="navbar-container">
             <div class="navber-logo">
                 <a class="navber-logo-a" href="">
-                    <img class="navber-logo-img"
-                        src="	https://xcare-demo.pbminfotech.com/demo2/wp-content/uploads/sites/5/2024/01/logo.svg"
-                        alt="logo">
+                    <img class="navber-logo-img" src="img/logo.svg" alt="logo">
                 </a>
             </div>
             <div id="toggle">
@@ -35,13 +33,14 @@
                         <li><a class="navbar-menu-item" href="#">home <span><i
                                         class="fa fa-heartbeat color-icon"></i></span> </a></li>
                         <li><a class="navbar-menu-item title_container" href="#">Services <span><i
-                                        class="fa fa-angle-down color-icon"></i></span></a></li>
-                        <ul class="title_content-list">
-                            <li class="title_content-item"><a href="">Services 1</a></li>
-                            <li class="title_content-item"><a href="">Services 1</a></li>
-                            <li class="title_content-item"><a href="">Services 1</a></li>
-                            <li class="title_content-item"><a href="">Services 1</a></li>
-                        </ul>
+                                        class="fa fa-angle-down color-icon"></i></span></a>
+                            <ul class="title_content-list">
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                            </ul>
+                        </li>
                         <li><a class="navbar-menu-item" href="#">Details <span><i
                                         class="fa fa-ambulance color-icon"></i></span> </a></li>
                         <li><a class="navbar-menu-item" href="#">Contact Us <span><i
@@ -93,11 +92,12 @@
 
     <section>
         <div class="section-container column-3">
-            <div class="section-content column">
+            <!-- <div class="section-content column">
                 <h4>Hyundai Starex</h4>
                 <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
                 <img src="https://static.chotot.com/storage/chotot-kinhnghiem/xe/2023/05/bbdfabd7-xe-cuu-thuong-cu-1-1536x1152.jpg"
                     alt="">
+                <h4>Purpose</h4>
                 <p>Hyundai Starex - dòng xe được dùng rất nhiều trong lĩnh vực y tế</p>
             </div>
             <div class="section-content column">
@@ -105,6 +105,7 @@
                 <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
                 <img src="https://static.chotot.com/storage/chotot-kinhnghiem/xe/2023/05/bbdfabd7-xe-cuu-thuong-cu-1-1536x1152.jpg"
                     alt="">
+                <h4>Purpose</h4>
                 <p>Hyundai Starex - dòng xe được dùng rất nhiều trong lĩnh vực y tế</p>
             </div>
             <div class="section-content column">
@@ -112,8 +113,9 @@
                 <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
                 <img src="https://static.chotot.com/storage/chotot-kinhnghiem/xe/2023/05/bbdfabd7-xe-cuu-thuong-cu-1-1536x1152.jpg"
                     alt="">
+                <h4>Purpose</h4>
                 <p>Hyundai Starex - dòng xe được dùng rất nhiều trong lĩnh vực y tế</p>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -130,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="content-wrapper column-3">
+            <div class="content-wrapper column-2">
                 <div class="content-item column">
                     <div class="content-logo">
                         <img src="img/hand-heart-icon.svg" alt="">
@@ -162,24 +164,6 @@
                         <img src="img/icon1.png" alt="">
                     </div>
                     <h4>24/7</h4>
-                    <p>The patient receives care that is planned and coordinated around their physical, mental and
-                        cognitive
-                        health needs</p>
-                </div>
-                <div class="content-item column">
-                    <div class="content-logo">
-                        <img src="img/icon1.png" alt="">
-                    </div>
-                    <h4>Comprehensive Care</h4>
-                    <p>The patient receives care that is planned and coordinated around their physical, mental and
-                        cognitive
-                        health needs</p>
-                </div>
-                <div class="content-item column">
-                    <div class="content-logo">
-                        <img src="img/icon1.png" alt="">
-                    </div>
-                    <h4>Comprehensive Care</h4>
                     <p>The patient receives care that is planned and coordinated around their physical, mental and
                         cognitive
                         health needs</p>
@@ -284,9 +268,25 @@
 
                         </div>
                         <div class="info-item column">
+<<<<<<< HEAD
                             <p class="highlight">Contact infomation</p>
                             <p>Apptech</p>
+=======
+                            <p class="highlight">Our Address</p>
+                            <ul class="column">
+                                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Aptech</a></li>
+                                <li><a href="#"><i class="fa-regular fa-envelope"></i>example@admin.com</a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone-volume"></i>(+84) 1900 0091</a></li>
+                            </ul>
+>>>>>>> af3a0675ea5e799059e065cbc6c311b4f235e2da
                         </div>
+                    </div>
+
+                    <div class="subscribe">
+                        <div class="subscribe-input">
+                            <input type="email" name="" id="" placeholder="example@admin.com">
+                        </div>
+                        <button>SUBSCRIBE</button>
                     </div>
 
 
@@ -316,7 +316,44 @@
         }, 1000)
 
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var num = 50; //number of pixels before modifying styles
 
+            $(window).bind('scroll', function () {
+                if ($(window).scrollTop() > num) {
+                    $('.navbar').addClass('sticky');
+                } else {
+                    $('.navbar').removeClass('sticky');
+                }
+            });
+        });
+        $.get('data.json', function (e) {
+            var product = '';
+            e.list.forEach(function (item) {
+                let product_id = item.id;
+                if (product_id > 3) {
+                    return false;
+                }
+                let product_title = item.title;
+                let product_img = item.image;
+                let product_purpose = item.purpose;
+                let product_des = item.descriptions;
+                product += `
+                <div class="section-content column">
+                    <h4>${product_title}</h4>
+                    <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                    <img src="${product_img}" alt="">
+                    <h4>${product_purpose}</h4>
+                    <div class="content-des">
+                        <p>${product_des}</p>
+                    </div>
+                </div>
+                `
+            });
+            $(".section-container").html(product);
+        });
+    </script>
 </body>
 
 </html>
