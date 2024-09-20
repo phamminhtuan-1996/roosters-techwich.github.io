@@ -280,9 +280,11 @@
                         </div>
                         <div class="info-item column">
                             <p class="highlight">Channel </p>
-                            <p>24/7</p>
-                            <p>News</p>
-                            <p>Help</p>
+                            <ul class="column">
+                                <li><a href="#">24/7</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
 
                         </div>
                         <div class="info-item column">
@@ -317,30 +319,7 @@
     </footer>
     <script type="text/javascript" src="script/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
-
     <script type="text/javascript">
-        console.log(document.querySelectorAll(".color-icon").length)
-        setInterval(function () {
-            for (let i = 0; document.querySelectorAll(".color-icon").length; i++) {
-                document.querySelectorAll(".color-icon")[i].classList.toggle('color-icon-item')
-
-            }
-
-        }, 1000)
-
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var num = 50; //number of pixels before modifying styles
-
-            $(window).bind('scroll', function () {
-                if ($(window).scrollTop() > num) {
-                    $('.navbar').addClass('sticky');
-                } else {
-                    $('.navbar').removeClass('sticky');
-                }
-            });
-        });
         $.get('data.json', function (e) {
             var product = '';
             e.list.forEach(function (item) {
