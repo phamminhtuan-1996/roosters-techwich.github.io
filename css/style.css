@@ -27,7 +27,7 @@
     --gradient-1: linear-gradient(to top bottom ,rgb(192, 57, 43),rgb(255, 175, 123));
     --color-deep4-ko:#ffaf7b;
     --color-radiant-yellow: #F79F1F;
-
+    --color-yellow: #FFC900;
 }
 
 
@@ -109,6 +109,7 @@ button {
     border: none;
     border-radius: 50px;
     transition: all 0.5s;
+    font-size: 80%;
 
     i {
         margin-left: 5px;
@@ -157,6 +158,9 @@ button.order {
 
 .w500 {
     width: 500px;
+    h2{
+        color: var(--text-blue);
+    }
 }
 
 .section-title {
@@ -246,7 +250,7 @@ button.order {
     top: 50px;
     width: 90%;
     background-color: #90e7e375;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .navbar.sticky {
@@ -291,25 +295,44 @@ button.order {
     position: relative;
 }
 
+/* .title_content-list::before {
+    display:block;
+    content: "";
+    height: 30px;
+    background-color: #30336b;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    transform: translateY(-100%);
+} */
+
 .title_content-list {
     padding: 10px 20px;
     position: absolute;
+    margin-top: 5px;
     top: 50px;
-    background-color: var(--color-clouds);
+    right: 336px;
+    width: 350px;
+    background-color: rgba(227, 227, 227, 0.9);
     display: none;
+}
+
+
+.navbar-menu-item:hover ~ .title_content-list {
+    display: block;
 }
 
 
 /* navbar-menu-item */
 
 .navbar-menu-item {
-    padding: 16px;
+    padding: 16px ;
+    width: 100%;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    opacity: 0.8;
     box-sizing: border-box;
-    color: var(--color-radiant-yellow);
+    color: #474787;
 }
 
 .color-icon {
@@ -345,13 +368,14 @@ button.order {
     color: var(--color-cyanite);
     text-align: left;
     opacity: 0.8;
+    animation: anima ease 0.3s;
 }
 
 .title_content-list a:hover {
     background-color: var(--color-pink-gl);
     opacity: 1;
     color: var(--color-deep-ko);
-    animation: anima ease 0.3s;
+    animation: anima ease 0.4s;
 }
 
 
@@ -456,6 +480,12 @@ button.order {
                 left: 5%;
                 transform: translateY(-50%);
 
+                button {
+                    color: var(--color-naturcial-flower);
+                    opacity: 0.9;
+                    font-weight: 700;
+                }
+
                 .header-home-gid {
                     gap: 30px;
 
@@ -471,23 +501,37 @@ button.order {
 
                         h3 {
                             display: inline-block;
-                            padding: 5px 15px;
-                            color: rgb(144, 231, 227);
+                            font-size: 14px;
+                            padding: 10px 30px;
+                            color: #d63031; 
                             border: 1px solid #90e7e3;
                             border-radius: 50px;
+                            background-color: #b2bec3;
+                            opacity: 0.9;
                         }
 
                         h1 {
                             font-weight: 400;
                             font-size: 87px;
+                            color: #FA255E;
                         }
 
                         h2 {
                             font-size: 87px;
                             font-weight: 700;
+                            color: var(--color-deep2-ko);
+                        }
+                        
+                        h4 {
+                            color: var(--color-deep2-ko)
                         }
 
+                            i {
+                                color: var(--color-carmine-pink);
+                            }
+
                     }
+                    
                 }
             }
         }
@@ -823,6 +867,7 @@ footer {
                 button {
                     padding: 15px;
                     border-radius: 0;
+                    
                 }
             }
 
@@ -869,8 +914,8 @@ input {
     }
 
     .fp-list-item {
-        margin-top: 20px;
         width: 100%;
+        background-color: #dfe6e9;
 
         display: grid;
         grid-template-columns: repeat(auto-fill, 300px);
@@ -883,6 +928,9 @@ input {
             display: flex;
             flex-direction: column;
             gap: 10px;
+        }
+        .fp-item-img:nth-child(1) {
+            margin-top: 20px;
         }
         .fp-item-img {
             width: 100%;
@@ -907,6 +955,7 @@ input {
             }
             .fp-item-detail--price{
                 color: var(--color-naturcial-flower);
+                margin-bottom: 10px;
             }
         }
     }
