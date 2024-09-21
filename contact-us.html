@@ -3,17 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eAmbulance</title>
+    <title>EAmbulance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/details-car.css">
-    <link rel="stylesheet" media="screen and (min-width: 801px) and (max-width: 1000px)" href="css/tablet.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/tablet.css">
 
     <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
@@ -84,8 +82,8 @@
                     <div class="header-home-container">
                         <div class="header-home-gid column">
                             <div class="header-home-text column">
-                                <h2>Detail</h2>
-                                <h4>eAmbulance <i class="fa-solid fa-angles-right"></i> Detail</h4>
+                                <h2>Contact Us</h2>
+                                <h4>eAmbulance <i class="fa-solid fa-angles-right"></i> Contact</h4>
                             </div>
 
                         </div>
@@ -95,46 +93,104 @@
         </div>
     </header>
 
-    <div class="container">
-        <h1 align="center">Data not found</h1>
-        <!-- <div class="details-car column">
-            <div class="details-car__header row">
-                <div class="details-car__header--img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Armstrong_Ambulance_P17.jpg" alt="">
+
+    <section class="detail-info">
+        <div class="container">
+            <div class="detail-info__wrapper row">
+                <div class="detail-info__item column">
+                    <div class="detail-info__item--top column">
+                        <div class="content-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                        <h4>Mail us 24/7</h4>
+                    </div>
+                    <div>
+                        <p>no-reply@example.com</p>
+                        <p>no-reply@admin.com</p>
+                    </div>
                 </div>
-
-                <ul class="details column" type="none">
-                    <li class="details__item">
-                        <i class="fa-solid fa-ruler"></i>
-                        <span>Size Of The Vehicle</span>
-                    </li>
-                    <li class="details__item">
-                        <i class="fa-solid fa-prescription-bottle-medical"></i>
-                        <span> Oxygen Tank</span>
-                    </li>
-                    <li class="details__item"><i class="fa-solid fa-heart-pulse"></i><span>Heart Rate Monitor</span>
-                    </li>
-                    <li class="details__item"><i class="fa-solid fa-suitcase-medical"></i> <span>First Aid
-                            Kits</span></li>
-                </ul>
-
-            </div>
-            <div class="details-car__title column">
-
-                <h2 class="details-car__title--text">Ambulance Car Vector Ar</h2>
-                <div class="details-car__description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus tenetur nam vitae modi
-                        nostrum deserunt, quibusdam commodi excepturi soluta.</p>
+                <div class="detail-info__item column">
+                    <div class="detail-info__item--top column">
+                        <div class="content-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                        <h4>Call us 24/7</h4>
+                    </div>
+                    <div>
+                        <p>Phone: (+84) 1900 - 0091</p>
+                        <p>Mobile: (+84) 901 - 234 - 567</p>
+                    </div>
                 </div>
-                <span class="details-car__title--price">$420.000</span>
-                <ul class="details-car__point">
-                    <li class="details-car__point--item"></li>
-                </ul>
-                <button class="order">Book now</button>
+                <div class="detail-info__item column">
+                    <div class="detail-info__item--top column">
+                        <div class="content-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                        <h4>Our Location</h4>
+                    </div>
+                    <div>
+                        <p>Aptech</p>
+                        <p>Aptech Ho Chi Minh</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-        </div> -->
-    </div>
+    <section class="contact-us">
+        <div class="container">
+            <div class="section-wrapper column-2">
+                <div class="contact-bg">
+                    <img src="/img/contact-form-bg.jpg" alt="">
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="title-wrapper column">
+                        <h3 class="section-title">CONTACT US</h3>
+
+                        <h2>Make an appointment apply for treatments</h2>
+                    </div>
+                    <form action="#">
+                        <div class="contact-form column">
+                            <div class="contact-info column-2">
+                                <div class="name">
+                                    <label for="name"></label>
+                                    <input type="text" name="fullName" id="name" placeholder="Your name *">
+                                </div>
+
+                                <div class="email">
+                                    <label for="email"></label>
+                                    <input type="email" name="mail" id="email" placeholder="Your Email *"
+                                        aria-required="true" aria-invalid="false">
+                                </div>
+                                <div class="phone">
+                                    <label for="phone"></label>
+                                    <input type="text" name="phone" id="phone" placeholder="Your Phone *">
+                                </div>
+                                <div class="subject">
+                                    <label for="subject"></label>
+                                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+
+                            <div class="message">
+                                <label for="message"></label>
+                                <textarea name="message" id="message" cols="40" rows="3" maxlength="400"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="sumit-button">
+                                <label for="sumit"></label>
+                                <button type="submit">SUBMIT NOW<i class="fa-solid fa-location-arrow"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer>
         <div class="footer-container">
@@ -214,98 +270,6 @@
 
     <script type="text/javascript" src="/script/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="/script/script.js"></script>
-    <script>
-        $(document).ready(function () {
-            let xhtml = ''
-            const urlParams = new URLSearchParams(window.location.search);
-            console.log(urlParams);
-            if (urlParams.size === 0) {
-                return;
-            }
-            const idParam = parseInt(urlParams.toString().replace('id=', ''));
-
-            console.log(idParam)
-            $.get('data.json', function (res) {
-                console.log(res);
-                const { list } = res;
-                console.log(list);
-                let result = list.find((item) => item.id === idParam);
-                console.log(result);
-                xhtml += ` <div class="details-car column">
-                <div class="details-car__header row">
-                    <div class="details-car__header--img">
-                        <img src="${result.image}" alt="">
-                    </div>
-
-                    <ul class="details column" type="none">
-                        <li class="details__item">
-                            <i class="fa-solid fa-ruler"></i>
-                            <span>Size Of The Vehicle</span>
-                        </li>
-                        <li class="details__item">
-                            <i class="fa-solid fa-prescription-bottle-medical"></i>
-                            <span> Oxygen Tank</span>
-                        </li>
-                        <li class="details__item"><i class="fa-solid fa-heart-pulse"></i><span>Heart Rate Monitor</span>
-                        </li>
-                        <li class="details__item"><i class="fa-solid fa-suitcase-medical"></i> <span>First Aid
-                                Kits</span></li>
-                    </ul>
-
-                </div>
-                <div class="details-car__title column">
-                    <h2 class="details-car__title--text">${result.title}</h2>
-                    <div class="details-car__description">
-                        <p>${result.descriptions}</p>
-                    </div>
-                    <span class="details-car__title--price">${result.price}</span>
-                    <ul class="details-car__point">
-                        <li class="details-car__point--item"></li>
-                    </ul>
-                    <button class="order">Book now</button>
-                </div>
-                <div  class="details-car__feedback column">
-                    <div class="details-car__feedback--start">
-                        <i class="fa-regular fa-star" value="1"></i>    
-                        <i class="fa-regular fa-star" value="2"></i>    
-                        <i class="fa-regular fa-star" value="3"></i>    
-                        <i class="fa-regular fa-star" value="4"></i>    
-                        <i class="fa-regular fa-star" value="5"></i>    
-                    </div>
-                    <form>
-                        <p><label for="w3review">Review of EAmbulance:</label></p>
-                        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-                        <br>
-                       <button align="center" class="send">Send</button>
-                    </form>
-                </div>
-             </div>`;
-            $('.container').html(xhtml);
-
-             $('.send').click(() => {
-                $('.container').html('<h1 align="center">Thank you for your comment</h1>');
-             })
-            function removeAllStart() {
-                for (let index = 1; index <= 5; index++) {
-                    let DOM = $(`.details-car__feedback--start i[value="${index}"]`);
-                    DOM.attr('class', 'fa-regular fa-star');
-                }
-            }
-            $('.details-car__feedback--start i').click(function() {
-                removeAllStart();
-                const valueTarget = parseInt(this.getAttribute('value'));
-                for (let index = 1; index <= valueTarget; index++) {
-                    let DOM = $(`.details-car__feedback--start i[value="${index}"]`);
-                    DOM.attr('class', 'fa-solid fa-star');
-                }
-            });
-            });
-           
-            // <i class="fa-solid fa-star"></i>
-
-            
-        })
-    </script>
 </body>
 
 </html>

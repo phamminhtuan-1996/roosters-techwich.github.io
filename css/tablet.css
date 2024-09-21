@@ -1,0 +1,45 @@
+h1 {
+    font-size: 34px !important;
+}
+
+h2 {
+    font-size: 30px !important;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.contact-us {
+    .container {
+        padding: 0;
+    }
+
+    .section-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 0 0 30px 30px;
+    }
+}
+.details-car__header{
+    flex-direction: column;
+}
+.details-car__header .details {
+    flex-direction: row;
+    gap: 50px;
+}
+
+.details-car__header--img {
+    height: auto;
+}
+
+.details-car__title {
+    width: 100%;
+}

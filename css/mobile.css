@@ -1,0 +1,181 @@
+h1 {
+    font-size: 24px !important;
+}
+
+h2 {
+    font-size: 26px !important;
+}
+
+h3 {
+    font-size: 50% !important;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.w500 {
+    width: 100%;
+}
+
+.column-3,
+.column-2,
+.column-2-3 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.row {
+    flex-direction: column;
+}
+
+/********************/
+.section-container {
+    padding: 0 10%;
+}
+
+
+.section-wrapper {
+    gap: 50px;
+
+    .contact-bg {
+        padding: 0 5%;
+    }
+}
+
+footer .footer-wrapper .footer-col2 h5 {
+    display: none;
+}
+
+footer .footer-wrapper .sub-footer {
+    gap: 20px 0;
+    align-items: center;
+
+    span {
+        display: none;
+    }
+
+    div {
+        align-items: center;
+    }
+}
+
+.contact-us {
+    .container {
+        padding: 0;
+    }
+
+    .section-wrapper {
+        border-radius: 0 0 30px 30px;
+    }
+}
+
+/*****************************/
+
+.details-car__header .details {
+    flex-direction: row;
+}
+
+.details-car__header--img {
+    height: auto;
+}
+
+.details-car__title {
+    width: 100%;
+}
+
+/************contact page ************/
+.detail-info {
+    .detail-info__wrapper {
+        gap: 30px;
+
+        .detail-info__item {
+            width: 100% !important;
+        }
+    }
+}
+
+.navbar-menu-content {
+    flex-direction: column;
+    text-align: center;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    top: 5%;
+}
+#toggle {
+    display: block;
+    position: relative;
+    z-index: 999;
+}
+.navber-logo{
+    display: none;
+}
+.navbar-menu,
+.navbar-find {
+    display: none;
+}
+.navbar.sticky{
+    display: none;
+}
+.navbar-container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 0;
+    width: auto;
+    margin-top: 5%;
+    right: 5%;
+    justify-content: flex-end;
+}
+
+.navbar-menu {
+    margin-top: 40px;
+    position: absolute;
+    text-align: center;
+    background-color: var(--color-clouds);
+    top: 10px;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+    animation: anima ease 0.3s;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.navbar-menu-left {
+    display: block;
+}
+
+.navbar-menu-right {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+.navbar-menu-item {
+    display: block;
+    color: var(--color-blue-nights);
+    border-bottom: 1px solid var(--text-grey);
+    text-align: left;
+}
+
+#find {
+    display: none;
+}
+
+#flex {
+    flex-direction: column;
+}
+
+.title_content-list {
+    right: 0;
+    top: 120px;
+    width: 220px;
+    background-color: white;
+    z-index: 999;
+}

@@ -1,22 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooster Team</title>
-    <link rel="stylesheet" href="details-car.css">
-    <link rel="stylesheet" href="./Techwiz/style.css">
+    <title>EAmbulance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/tablet.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css">
 </head>
+
 <body>
-    <nav class="nav-main">
-        <ul class="nav-main__list">
-            <li class="nav-main__list--item"><a href="#">Home</a></li>
-            <li class="nav-main__list--item"><a href="#">About</a></li>
-            <li class="nav-main__list--item"><a href="#">Products</a></li>
-            <li class="nav-main__list--item"><a href="#">News</a></li>
-            <li class="nav-main__list--item"><a href="#">Contact</a></li>
-        </ul>
+
+    <div class="call-now">
+        <div class="call-now--form">
+            <form action="sumit">
+                <label for="">Tel:</label>
+                <input type="tel" name="phone" id="">
+                <label for="">Address:</label>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15676.573304912468!2d106.708992!3d10.8003328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1726824218652!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button>Call Now</button>
+            </form>
+        </div>
+        <img src="/img/emergency-call.svg" alt="">
+    </div>
+    <nav class="navbar">
+
+        <div class="navbar-container">
+            <div class="navber-logo">
+                <a class="navber-logo-a" href="index.html">
+                    <img class="navber-logo-img" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-menu-left"></div> <!--tạo background cho menu-->
+                <div class="navbar-menu-right">
+                    <ul class="navbar-menu-content">
+                        <li><a class="navbar-menu-item" href="index.html">home <span><i
+                                        class="fa fa-heartbeat color-icon"></i></span> </a></li>
+                        <li><a class="navbar-menu-item title_container" href="filter-page.html">Services <span><i
+                                        class="fa fa-angle-down color-icon"></i></span></a>
+                            <ul class="title_content-list">
+                                <li class="title_content-item"><a href="">Emergency Ambulance</a></li>
+                                <li class="title_content-item"><a href="">Hospital Transfer</a></li>
+                                <li class="title_content-item"><a href="">Funeral</a></li>
+                                <li class="title_content-item"><a href="">Ambulance Air</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="navbar-menu-item" href="details.html">Details <span><i
+                                        class="fa fa-ambulance color-icon"></i></span> </a></li>
+                        <li><a class="navbar-menu-item" href="contact-us.html">Contact Us <span><i
+                                        class="fa-solid fa-phone-volume color-icon"></i></span> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="toggle">
+                <div id="toggle-wrapper">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
     </nav>
+
+
+    <header>
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="background-wrapper">
+                    <div class="header-background">
+                        <img src="/img/banner-01.png" alt="logo">
+                    </div>
+
+                    <div class="header-home-container">
+                        <div class="header-home-gid column">
+                            <div class="header-home-text column">
+                                <h3>make your choice a happy one everyday</h3>
+                                <h1>KING OF SPEED-TIME</h1>
+                                <h2>revitalize your soul</h2>
+                            </div>
+                            <div>
+                                <button>Discover<i class="fa-solid fa-location-arrow"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="section-container column-3">
+            <h1 align="center"> product not found </h1>
+            <!-- <div class="section-content column">
+                <h4>Hyundai Starex</h4>
+                <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                <img src="https://static.chotot.com/storage/chotot-kinhnghiem/xe/2023/05/bbdfabd7-xe-cuu-thuong-cu-1-1536x1152.jpg"
+                    alt="">
+                <h4>Purpose</h4>
+                <p>Hyundai Starex - dòng xe được dùng rất nhiều trong lĩnh vực y tế</p>
+            </div>
+            <div class="section-content column">
+                <h4>Hyundai Starex</h4>
+                <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                <img src="https://static.chotot.com/storage/chotot-kinhnghiem/xe/2023/05/bbdfabd7-xe-cuu-thuong-cu-1-1536x1152.jpg"
+                    alt="">
+                <h4>Purpose</h4>
+                <p>Hyundai Starex - dòng xe được dùng rất nhiều trong lĩnh vực y tế</p>
+            </div>
+            <div class="section-content column">
+                <h4>Hyundai Starex</h4>
+                <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                <img src="https://static.chotot.com/storage/chotot-kinhnghiem/xe/2023/05/bbdfabd7-xe-cuu-thuong-cu-1-1536x1152.jpg"
+                    alt="">
+                <h4>Purpose</h4>
+                <p>Hyundai Starex - dòng xe được dùng rất nhiều trong lĩnh vực y tế</p>
+            </div> -->
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="title-wrapper column">
+
+                <h3 class="section-title">ABOUT US</h3>
+                <div class="w500">
+                    <h2>We Are The Best EAmbulance Service</h2>
+                </div>
+            </div>
+
+            <div class="content-wrapper column-2">
+                <div class="content-item column">
+                    <div class="content-logo">
+                        <img src="img/hand-heart-icon.svg" alt="">
+                    </div>
+                    <h4>Enhancing Your Survival</h4>
+                    <p>
+
+                        We have a dedicated team of skilled doctors committed to providing excellent healthcare. Each
+                        physician specializes in various fields, ensuring comprehensive and personalized care for our
+                        patients. With a focus on compassion and expertise, our doctors work collaboratively to promote
+                        the health and well-being of our community.
+                    </p>
+                </div>
+
+                <div class="content-item column">
+                    <div class="content-logo">
+                        <img src="img/ambulance-icon.svg" alt="">
+                    </div>
+                    <h4>More Timeliness</h4>
+                    <p>with a professional team of experienced drivers dedicated to providing safe and reliable
+                        transportation. Each driver is trained to ensure the highest standards of service, prioritizing
+                        customer satisfaction and safety on the road. With their expertise and commitment, our drivers
+                        deliver a smooth and efficient travel experience for all passengers.</p>
+                </div>
+                <div class="content-item column">
+                    <div class="content-logo">
+                        <img src="img/equipment.svg" alt="">
+                    </div>
+                    <h4>Top Equipment</h4>
+                    <p>Our facility is equipped with modern and cutting-edge technology, ensuring the highest standards
+                        of efficiency and safety. We utilize state-of-the-art equipment designed to enhance performance
+                        and improve outcomes. This commitment to innovation allows us to provide top-quality services
+                        and meet the evolving needs of our patients and clients.</p>
+                </div>
+                <div class="content-item column">
+                    <div class="content-logo">
+                        <img src="img/24-7.svg" alt="">
+                    </div>
+                    <h4>24/7</h4>
+                    <p>We operate 24/7, ensuring that our services are always available to meet your needs. Our
+                        dedicated team is ready to assist you at any time, providing continuous support and
+                        responsiveness around the clock. This commitment ensures that you receive timely assistance
+                        whenever you need it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="section-wrapper column-2">
+                <div class="contact-bg">
+                    <img src="/img/contact-form-bg.jpg" alt="">
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="title-wrapper column">
+                        <h3 class="section-title">CONTACT US</h3>
+
+                        <h2>Should your need more infomation</h2>
+                        <p>Leave a Comment</p>
+                    </div>
+                    <form action="#">
+                        <div class="contact-form column">
+                            <div class="contact-info column-2">
+                                <div class="name">
+                                    <label for="name"></label>
+                                    <input type="text" name="fullName" id="name" placeholder="Your name *">
+                                </div>
+
+                                <div class="email">
+                                    <label for="email"></label>
+                                    <input type="email" name="mail" id="email" placeholder="Your Email *"
+                                        aria-required="true" aria-invalid="false">
+                                </div>
+                                <div class="phone">
+                                    <label for="phone"></label>
+                                    <input type="text" name="phone" id="phone" placeholder="Your Phone *">
+                                </div>
+                                <div class="subject">
+                                    <label for="subject"></label>
+                                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+
+                            <div class="message">
+                                <label for="message"></label>
+                                <textarea name="message" id="message" cols="40" rows="3" maxlength="400"
+                                    placeholder="context"></textarea>
+                            </div>
+                            <div class="sumit-button">
+                                <label for="sumit"></label>
+                                <button type="submit">SUBMIT NOW<i class="fa-solid fa-location-arrow"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper column-2-3">
+                <div class="footer-col1 column">
+                    <div class="logo">
+                        <img src="/img/logo.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <p>The healthcare arena there was a felt need of developing new as well as upgrading the
+                            existing
+                            functioning.</p>
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col2 column">
+                    <!-- <h5>There is Only One Thing In The World I Want And That Is Hospital</h5> -->
+                    <div class="infomation column-3">
+                        <div class="info-item column">
+                            <p class="highlight">Learn More</p>
+                            <ul class="column">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="info-item column">
+                            <p class="highlight">Channel </p>
+                            <ul class="column">
+                                <li><a href="#">24/7</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="info-item column">
+                            <p class="highlight">Contact infomation</p>
+                            <ul class="column">
+                                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Aptech</a></li>
+                                <li><a href="#"><i class="fa-regular fa-envelope"></i>example@admin.com</a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone-volume"></i>(+84) 1900 0091</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="subscribe">
+                        <div class="subscribe-input">
+                            <input type="email" name="" id="" placeholder="example@admin.com">
+                        </div>
+                        <button>SUBSCRIBE</button>
+                    </div>
+
+
+                    <div class="sub-footer row">
+                        <div class="row">
+                            <p>Terms and conditions</p>
+                            <span>|</span>
+                            <p>Privacy policy</p>
+                        </div>
+                        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 <u>PBM Infotech</u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript">
+        $.get('data.json', function (e) {
+            var product = '';
+            e.list.forEach(function (item) {
+                let product_id = item.id;
+                if (product_id > 3) {
+                    return false;
+                }
+                let product_title = item.title;
+                let product_img = item.image;
+                let product_purpose = item.purpose;
+                let product_des = item.descriptions;
+                product += `
+                <div class="section-content column">
+                    <h4>${product_title}</h4>
+                    <span class="break"><span class="line"></span><i class="fa-solid fa-circle"></i></span>
+                    <a href="./details.html?id=${product_id}">
+                    <img src="${product_img}" alt="">
+                    </a>
+                    <h4>${product_purpose}</h4>
+                    <div class="content-des">
+                        <p>${product_des}</p>
+                    </div>
+                </div>
+                `
+            });
+            $(".section-container").html(product);
+        });
+    </script>
 </body>
+
 </html>

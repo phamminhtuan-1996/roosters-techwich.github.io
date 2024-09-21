@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAmbulance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/tablet.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css">
+</head>
+
+<body>
+
+    <div class="call-now">
+        <div class="call-now--form">
+            <form action="sumit">
+                <label for="">Tel:</label>
+                <input type="tel" name="phone" id="">
+                <label for="">Address:</label>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15676.573304912468!2d106.708992!3d10.8003328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1726824218652!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button>Call Now</button>
+            </form>
+        </div>
+        <img src="/img/emergency-call.svg" alt="">
+    </div>
+    <nav class="navbar">
+
+        <div class="navbar-container">
+            <div class="navber-logo">
+                <a class="navber-logo-a" href="">
+                    <img class="navber-logo-img" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-menu-left"></div>
+                <div class="navbar-menu-right">
+                    <ul class="navbar-menu-content">
+                        <li><a class="navbar-menu-item" href="index.html">home <span><i
+                                        class="fa fa-heartbeat color-icon"></i></span> </a></li>
+                        <li><a class="navbar-menu-item title_container" href="filter-page.html">Services <span><i
+                                        class="fa fa-angle-down color-icon"></i></span></a>
+                            <ul class="title_content-list">
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                                <li class="title_content-item"><a href="">Services 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="navbar-menu-item" href="details.html">Details <span><i
+                                        class="fa fa-ambulance color-icon"></i></span> </a></li>
+                        <li><a class="navbar-menu-item" href="contact-us.html">Contact Us <span><i
+                                        class="fa-solid fa-phone-volume color-icon"></i></span> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="toggle">
+                <div id="toggle-wrapper">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="background-wrapper">
+                    <div class="header-background">
+                        <img src="/img/banner-01.png" alt="logo">
+                    </div>
+
+                    <div class="header-home-container">
+                        <div class="header-home-gid column">
+                            <div class="header-home-text column">
+                                <h2>Types Of Vehicle</h2>
+                                <h4>eAmbulance <i class="fa-solid fa-angles-right"></i> Vehicle</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="container">
+            <div class="fp-wrapper column">
+                <div class="fp-filter-wrapper row">
+                    <div class="fp-filter-group1">
+                        <select name="City" id="filter-b-city">
+                            <option value="All">All</option>
+                            <option value="HCM">Ho Chi Minh</option>
+                            <option value="HN">Ha Noi</option>
+                            <option value="DN">Da Nang</option>
+                        </select>
+                        <select name="purpose" id="filter-b-purpose">
+                            <option value="All">All</option>
+                            <option value="EA">Emergency Ambulance</option>
+                            <option value="HT">Hospital Transfer</option>
+                            <option value="F">Funeral</option>
+                            <option value="AA">Ambulance Air</option>
+                        </select>
+                    </div>
+                    <!-- <div class="fp-filter-group2">
+                        <div id="filter-b-prices" class="filter-price-wrapper row">
+                            <label for="">Prices</label>
+                            <select name="price" id="price-LH">
+                                <option value="">All</option>
+                                <option value="">Lower</option>
+                                <option value="">Higher</option>
+                            </select>
+                            <input type="range" name="" id="">
+                            <output id="price">Show Price</output>
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="fp-list-item">
+                    <!-- <div class="fp-item" data-location="Ha Noi" data-purpose="HT">
+                        <div class="fp-item-img">
+                            <img src="/img/am_sample_1.png" alt="">
+                        </div>
+                        <div class="fp-item-detail">
+                            <div class="fp-item-detail--name">
+                                <h2>Ten xe</h2>
+                            </div>
+                            <div class="fp-item-detail--group1">
+                                <div class="fp-item-detail--place">
+                                    Hà Nội
+                                </div>
+                                <div class="fp-item-detail--purpose">
+                                    Hospital Transfer
+                                </div>
+                            </div>
+                            <div class="fp-item-detail--price">
+                                300.000 VND
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fp-item" data-location="Ho Chi Minh" data-purpose="F">
+                        <div class="fp-item-img">
+                            <img src="/img/am_sample_1.png" alt="">
+                        </div>
+                        <div class="fp-item-detail">
+                            <div class="fp-item-detail--name">
+                                <h2>Ten xe</h2>
+                            </div>
+                            <div class="fp-item-detail--group1">
+                                <div class="fp-item-detail--place">
+                                    Hồ Chí Minh
+                                </div>
+                                <div class="fp-item-detail--purpose">
+                                    Funeral
+                                </div>
+                            </div>
+                            <div class="fp-item-detail--price">
+                                300.000 VND
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fp-item" data-location="Da Nang" data-purpose="EA">
+                        <div class="fp-item-img">
+                            <img src="/img/am_sample_1.png" alt="">
+                        </div>
+                        <div class="fp-item-detail">
+                            <div class="fp-item-detail--name">
+                                <h2>Ten xe</h2>
+                            </div>
+                            <div class="fp-item-detail--group1">
+                                <div class="fp-item-detail--place">
+                                    Da Nang
+                                </div>
+                                <div class="fp-item-detail--purpose">
+                                    Emergency
+                                </div>
+                            </div>
+                            <div class="fp-item-detail--price">
+                                300.000 VND
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper column-2-3">
+                <div class="footer-col1 column">
+                    <div class="logo">
+                        <img src="/img/logo.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <p>The healthcare arena there was a felt need of developing new as well as upgrading the
+                            existing
+                            functioning.</p>
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col2 column">
+                    <h5>There is Only One Thing In The World I Want And That Is Hospital</h5>
+                    <div class="infomation column-3">
+                        <div class="info-item column">
+                            <p class="highlight">Learn More</p>
+                            <ul class="column">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="info-item column">
+                            <p class="highlight">Channel </p>
+                            <ul class="column">
+                                <li><a href="#">24/7</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="info-item column">
+                            <p class="highlight">Contact infomation</p>
+                            <ul class="column">
+                                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Aptech</a></li>
+                                <li><a href="#"><i class="fa-regular fa-envelope"></i>example@admin.com</a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone-volume"></i>(+84) 1900 0091</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="subscribe">
+                        <div class="subscribe-input">
+                            <input type="email" name="" id="" placeholder="example@admin.com">
+                        </div>
+                        <button>SUBSCRIBE</button>
+                    </div>
+
+
+                    <div class="sub-footer row">
+                        <div class="row">
+                            <p>Terms and conditions</p>
+                            <span>|</span>
+                            <p>Privacy policy</p>
+                        </div>
+                        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 <u>PBM Infotech</u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $.get('data.json', function (ketqua) {
+            var fp_item = '';
+            ketqua.list.forEach(function (item) {
+                let fp_item_img = item.image;
+                let fp_item_title = item.title;
+                let fp_item_location = item.location;
+                let fp_item_price = item.price;
+                let fp_item_purpose = item.purpose;
+                let fp_dt_pp = item.dt_purpose;
+                let fp_dt_local = item.dt_location;
+                // fp_item += `
+                // <div class="fp-item">
+                //         <div class="fp-item-img">
+                //             <img src="${fp_item_img}" alt="">
+                //         </div>
+                //         <div class="fp-item-detail">
+                //             <div class="fp-item-detail--name">
+                //                 <h4>${fp_item_title}</h4>
+                //             </div>
+                //             <div class="fp-item-detail--group1">
+                //                 <div class="fp-item-detail--place">
+                //                     Ho Chi Minh
+                //                 </div>
+                //                 <div class="fp-item-detail--purpose">
+                //                     ${fp_item_purpose}
+                //                 </div>
+                //             </div>
+                //             <div class="fp-item-detail--price">
+                //                 ${fp_item_price}
+                //             </div>
+                //         </div>
+                //     </div>
+                // `
+                fp_item += `
+                    <div class="fp-item" data-location="${fp_dt_local}" data-purpose="${fp_dt_pp}">
+                        <div class="fp-item-img">
+                            <a href="./details.html?id=${item.id}">
+                            <img src="${fp_item_img}" alt="">
+                            </a>
+                        </div>
+                        <div class="fp-item-detail">
+                            <div class="fp-item-detail--name">
+                                <h4>${fp_item_title}</h4>
+                            </div>
+                            <div class="fp-item-detail--group1">
+                                <div class="fp-item-detail--place">
+                                    ${fp_item_location}
+                                </div>
+                                <div class="fp-item-detail--purpose">
+                                    ${fp_item_purpose}
+                                </div>
+                            </div>
+                            <div class="fp-item-detail--price">
+                                ${fp_item_price}
+                            </div>
+                        </div>
+                    </div>
+                    `
+            });
+            $(".fp-list-item").html(fp_item);
+        });
+    </script>
+
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+
+</html>
