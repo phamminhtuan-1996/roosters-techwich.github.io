@@ -246,7 +246,7 @@ button.order {
     top: 50px;
     width: 90%;
     background-color: #90e7e375;
-    
+    border-radius: 12px;
 }
 
 .navbar.sticky {
